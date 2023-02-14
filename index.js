@@ -79,6 +79,10 @@ let example1 = {
     add: function(num){
         this.number = this.number + num;     //функция кот увелич число намбер на опред число в методе
     },
+    subtract: function (num){
+        this.number = this.number - num;    //метод кот вычитает
+    },
+
 } 
 
 example1.inc();
@@ -91,4 +95,5 @@ console.log(example1.number);
 example1.add(5);
 console.log(example1.number);
 
-
+example1.subtract();
+console.log (example1.number);
