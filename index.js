@@ -14,7 +14,7 @@ let Ajar = {
     height: 165,
     weight: 53,
     isEmployed: true,
-    sayBye: function(){
+    sayBye: function () {
         console.log("bye");
     }
 };
@@ -25,7 +25,7 @@ let Nestana = {
     name: "NEstana",
     age: 56,
     weight: 52,
-    greeting: function(){
+    greeting: function () {
         console.log("hello my name is " + this.name);
     }
 };
@@ -33,16 +33,16 @@ let Nestana = {
 Nestana.greeting();
 
 // view , edit , add
-console.log (Ajar.age);
-console.log (Elya.name);
-console.log (Nestana.weight );
+console.log(Ajar.age);
+console.log(Elya.name);
+console.log(Nestana.weight);
 
 
 Ajar.age = 81; //меняем свойство
 console.log(Ajar.age);
 
 
-Nestana.weight = 50; 
+Nestana.weight = 50;
 console.log(Nestana.weight);
 
 Ajar.favouriteBooks = ["Harry Potter ", " harry poter 2"]; //добавляем свойство
@@ -53,11 +53,11 @@ delete Ajar.favouriteBooks; //удаляем свойство
 let elaman = {
     name: "elaman",
     age: 28,
-    sayHello: function(){
-        console.log("Hello " + this.name); 
+    sayHello: function () {
+        console.log("Hello " + this.name);
     },
-    sayAge: function(){
-        console.log( "i'am " + this.age + " old");
+    sayAge: function () {
+        console.log("i'am " + this.age + " old");
     }
 }
 
@@ -72,20 +72,20 @@ elaman.sayAge();
 
 //обьект кот позволяет хранить число и что то с ним делать
 let example1 = {
-    number: 0 ,
-    inc: function(){
+    number: 0,
+    inc: function () {
         this.number = this.number + 1; //добавляет одно
-    } ,
-    add: function(num){
+    },
+    add: function (num) {
         this.number = this.number + num;     //функция кот увелич число намбер на опред число в методе
     },
-    subtract: function (num){
+    subtract: function (num) {
         this.number = this.number - num;    //метод кот вычитает
     },
-    print: function(){
+    print: function () {
         console.log(this.number); //выводит цифру
     },
-} 
+}
 
 example1.print();
 
@@ -98,8 +98,8 @@ console.log(example1.number);
 
 example1.add(5);
 console.log(example1.number);
-
 example1.subtract(4);
-console.log (example1.number);
-
+console.log(example1.number);
 example1.print();
+
+
