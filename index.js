@@ -36,3 +36,7 @@ Nestana.weight = 50;
 console.log(Nestana.weight);
 
 Ajar.favouriteBooks = ["Harry Potter ", " harry poter 2"]; //добавляем свойство
+
+
+
+delete Ajar.favouriteBooks; //удаляем свойство
