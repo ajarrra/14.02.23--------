@@ -24,8 +24,13 @@ Ajar.sayBye(); //вызвали функцию в обьете
 let Nestana = {
     name: "NEstana",
     age: 56,
-    weight: 52
+    weight: 52,
+    greeting: function(){
+        console.log("hello my name is " + this.name);
+    }
 };
+
+Nestana.greeting();
 
 // view , edit , add
 console.log (Ajar.age);
