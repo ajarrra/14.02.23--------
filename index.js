@@ -26,3 +26,7 @@ let Nestana = {
 console.log (Ajar.age);
 console.log (Elya.name);
 console.log (Nestana.weight );
+
+
+Ajar.age = 81; //меняем свойство
+console.log(Ajar.age);
