@@ -68,3 +68,9 @@ elaman.sayHello();
 
 console.log(elaman.age);
 elaman.sayAge();
+
+
+//обьект кот позволяет хранить число и что то с ним делать
+let example1 = {
+    number:0 
+}
