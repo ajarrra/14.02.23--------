@@ -72,13 +72,23 @@ elaman.sayAge();
 
 //обьект кот позволяет хранить число и что то с ним делать
 let example1 = {
-    number:0 ,
+    number: 0 ,
     inc: function(){
         this.number = this.number + 1; //добавляет одно
-    } 
+    } ,
+    add: function(num){
+        this.number = this.number + num;     //функция кот увелич число намбер на опред число в методе
+    },
 } 
 
 example1.inc();
 example1.inc();
 example1.inc();
 console.log(example1.number);
+
+//калькулятор достор
+
+example1.add(5);
+console.log(example1.number);
+
+
