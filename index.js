@@ -50,13 +50,21 @@ Ajar.favouriteBooks = ["Harry Potter ", " harry poter 2"]; //добавляем 
 delete Ajar.favouriteBooks; //удаляем свойство
 
 //функция внутри обьекта  это метод
-let Elaman = {
-    name: "Elaman",
+let elaman = {
+    name: "elaman",
     age: 28,
     sayHello: function(){
-        console.log("Hello"); 
+        console.log("Hello " + this.name); 
     },
+    sayAge: function(){
+        console.log( "i'am " + this.age + " old");
+    }
 }
 
-Elaman.sayHello(); //выводит функцию в обьекте 
+elaman.sayHello(); //выводит функцию в обьекте 
 // () обязательно писать что бы вывести
+elaman.name = "Elaman agai";
+elaman.sayHello();
+
+console.log(elaman.age);
+elaman.sayAge();
