@@ -13,8 +13,13 @@ let Ajar = {
     age: 18,
     height: 165,
     weight: 53,
-    isEmployed: true
+    isEmployed: true,
+    sayBye: function(){
+        console.log("bye");
+    }
 };
+
+Ajar.sayBye(); //вызвали функцию в обьете
 
 let Nestana = {
     name: "NEstana",
@@ -37,6 +42,18 @@ console.log(Nestana.weight);
 
 Ajar.favouriteBooks = ["Harry Potter ", " harry poter 2"]; //добавляем свойство
 
-
-
 delete Ajar.favouriteBooks; //удаляем свойство
+
+//функция внутри обьекта  это метод
+let Elaman = {
+    name: "Elaman",
+    age: 28,
+    sayHello: function(){
+        console.log("Hello"); 
+    },
+}
+
+Elaman.sayHello(); //выводит функцию в обьекте 
+
+
+
