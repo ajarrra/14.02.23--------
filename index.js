@@ -30,3 +30,8 @@ console.log (Nestana.weight );
 
 Ajar.age = 81; //меняем свойство
 console.log(Ajar.age);
+
+
+Nestana.weight = 50; 
+console.log(Nestana.weight);
+
