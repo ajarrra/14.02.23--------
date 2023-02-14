@@ -82,8 +82,12 @@ let example1 = {
     subtract: function (num){
         this.number = this.number - num;    //метод кот вычитает
     },
-
+    print: function(){
+        console.log(this.number); //выводит цифру
+    },
 } 
+
+example1.print();
 
 example1.inc();
 example1.inc();
@@ -95,5 +99,7 @@ console.log(example1.number);
 example1.add(5);
 console.log(example1.number);
 
-example1.subtract();
+example1.subtract(4);
 console.log (example1.number);
+
+example1.print();
